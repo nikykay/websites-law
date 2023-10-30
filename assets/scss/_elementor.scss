@@ -1,0 +1,100 @@
+/* ---------------------------------------
+	
+--------------------------------------- */
+
+.left-offset {
+	@include breakpoint($global-width) {
+		padding-left: calc((100% - #{$global-width}) / 2);
+	}
+}
+
+.right-offset {
+	@include breakpoint($global-width) {
+		padding-right: calc((100% - #{$global-width}) / 2);
+	}
+}
+
+$el-col-gap: 30px;
+
+.elementor-inner,
+.elementor-section-wrap {
+	width: 100%;
+}
+
+[class*="elementor-column-gap"]:not(.elementor-column-gap-no) {
+	@include breakpoint(xlarge down) {
+		[class*="elementor-column-gap"] {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+}
+
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+	padding-right: #{$el-col-gap / 2};
+	padding-left: #{$el-col-gap / 2};
+}
+
+.elementor-column-gap-default {
+	.elementor-column-gap-default {
+		margin-right: -#{$el-col-gap / 2};
+		margin-left: -#{$el-col-gap / 2};
+	}
+}
+
+.elementor-widget-heading .elementor-heading-title {
+	//line-height: $header-lineheight;
+
+	@each $size, $headers in $header-styles {
+		@include breakpoint($size) {
+			@each $header, $header-defs in $headers {
+				$font-size-temp: 1rem;
+				@if ($header == 'h1') {
+					&.elementor-size-xxl {
+						$font-size-temp: rem-calc(map-get($header-defs, font-size));
+						font-size: $font-size-temp;
+					}
+				} @else if ($header == 'h2') {
+					&.elementor-size-xl {
+						$font-size-temp: rem-calc(map-get($header-defs, font-size));
+						font-size: $font-size-temp;
+					}
+				} @else if ($header == 'h3') {
+					&.elementor-size-large {
+						$font-size-temp: rem-calc(map-get($header-defs, font-size));
+						font-size: $font-size-temp;
+					}
+				} @else if ($header == 'h4') {
+					&.elementor-size-medium {
+						$font-size-temp: rem-calc(map-get($header-defs, font-size));
+						font-size: $font-size-temp;
+					}
+
+				} @else if ($header == 'h5') {
+					&.elementor-size-small {
+						$font-size-temp: rem-calc(map-get($header-defs, font-size));
+						font-size: $font-size-temp;
+					}
+				}
+			}
+		}
+	}
+}
+
+.elementor-button {
+	&.elementor-size-xs {
+
+	}
+
+	&.elementor-size-md {
+
+	}
+
+	&.elementor-size-lg {
+
+	}
+
+	&.elementor-size-xl {
+
+	}
+}

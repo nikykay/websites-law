@@ -1,0 +1,50 @@
+@media screen and (min-width: 787px) and (max-width: 1024px) {
+  .service-contact-box .elementor-container {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+}
+
+@media screen and (max-width: 641px) {
+  .service-contact-box .elementor-container {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+
+}
+
+.service-title {
+  font-family: 'Poppins' !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 40px !important;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff !important;
+  background-color: rgba(0,0,0, 0.8);
+}
+.service-image-box {
+  max-width: 220px;
+  min-height: 350px;
+  position: relative;
+}
+
+.service-image-box img {
+  width: 100%;
+  max-width: 220px;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 641px) {
+  .service-title {
+    font-size: 18px !important;
+  }
+}

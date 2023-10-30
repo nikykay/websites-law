@@ -1,0 +1,123 @@
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .imgg img {
+    height: 440px !important;
+  }
+}
+
+
+@media screen and (max-width: 786px) {
+  .contact-form-box .elementor-container {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+}
+
+@media screen and (max-width: 641px) {
+  .contact-form-box .elementor-container {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
+
+@media screen and (min-width: 787px) and (max-width: 1024px) {
+  .sau-section .elementor-container .elementor-column {
+    width: 100% !important;
+  }
+  .sau-section .elementor-container .elementor-column .elementor-widget-wrap .elementor-element {
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonials .elementor-container {
+    flex-direction: row;
+  }
+  .areas-of-work .elementor-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .areas-of-work .elementor-element-d1dc603 {
+    display: none;
+  }
+
+
+  .testimonial-star-rating {
+    width: 20% !important;
+  }
+}
+
+.select-category {
+  .ui-selectmenu-button {
+    min-width: unset !important;
+    width: 150px !important;
+    margin-right: -100px;
+    float: right;
+  }
+}
+
+
+//.slick-initialized .slick-slide{
+//  display: block !important;
+//}
+
+
+.blog_holder .elementor-slick-slider {
+  width: 50%;
+  display: block !important;
+}
+
+
+.slick-prev:before, .slick-next:before {
+  color: #C9A66D;
+}
+
+.slick-next:before {
+  margin-left: 100px !important;
+}
+
+
+.slick-prev:before {
+  margin-left: -100px !important;
+
+
+}
+
+.eael-testimonial-user-company {
+  position: absolute;
+  top: 65px;
+  left: 128px;
+}
+
+
+@media screen and (min-width: 837px) {
+  .testimonial-star-rating {
+    float: right !important;
+    width: 22% !important;
+  }
+  .eael-testimonial-inline-bio .bio-text {
+    width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 837px) {
+  .eael-testimonial-inline-bio .bio-text {
+    width: 55% !important;
+  }
+}
+
+.testimonial-star-rating li {
+  display: none;
+}
+
+.testimonial-star-rating li:nth-child(-n+3) {
+  display: unset;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1150px) {
+  .eael-testimonial-content .eael-testimonial-user-company {
+    margin-top: 30px !important;
+  }
+}
+
+.eael-testimonial-item .eael-testimonial-quote::after {
+  content: unset !important;
+}

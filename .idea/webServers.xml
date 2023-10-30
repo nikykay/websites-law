@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="00fc031b-57ef-4175-91ce-6aeb82f911f6" name="law" url="https://wlalawfirmedev.wpengine.com/">
+        <fileTransfer rootFolder="/wp-content/themes/fxy_elementor" accessType="SFTP" host="wlalawfirmedev.sftp.wpengine.com" port="2222" sshConfigId="11dd424f-cde4-4262-bf1d-79a00047f32b" sshConfig="wlalawfirmedev@wlalawfirmedev.sftp.wpengine.com:2222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

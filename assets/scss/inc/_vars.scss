@@ -1,0 +1,28 @@
+// Project variables
+
+//Foundation fallback color
+$foundation-primary: #3CB4E5;
+$foundation-secondary: #DDC9A3;
+
+$primary: var(--e-global-color-primary);
+$secondary: var(--e-global-color-secondary);
+$accent: var(--e-global-color-accent);
+
+$text-color: var(--e-global-color-text);
+
+$main-color: var(--e-global-color-primary);
+$sub-color: var(--e-global-color-secondary);
+
+$font: var(--e-global-typography-text-font-family);
+$sub-font: var(--e-global-typography-accent-font-family);
+$fa: 'Font Awesome 5 Free';
+$fab: 'Font Awesome 5 Brands';
+
+// Font Awesome Vars
+$fa-font-path: "../fonts";
+$fa-font-display: swap;
+
+// Project mixins
+
+
+// Custom fonts

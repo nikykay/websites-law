@@ -1,0 +1,78 @@
+.blog-card-section {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  gap: 15px;
+  margin-bottom: 15px;
+
+
+}
+.select-category span {
+  font-size: 20px !important;
+  padding-right: 0;
+  margin-right: -10px;
+}
+.card-box {
+  max-width: 480px;
+  min-height: 570px;
+  padding: 30px;
+  box-shadow: 3px 3px 16px 5px #e6e6e6;
+}
+.blog-card-date {
+  font-family: 'Poppins' !important;
+  font-size: 20px !important;
+  line-height: 30px !important;
+  color: #8B8B8B !important;
+}
+.blog-card-title {
+  font-family: 'Poppins' !important;
+  font-size: 40px !important;
+  line-height: 50px !important;
+  font-weight: normal !important;
+}
+.blog-card-line {
+  width: 55px;
+  height: 2px;
+  background-color: #C9A66D;
+  margin-bottom: 20px;
+}
+.blog-card-content {
+  font-family: 'Poppins' !important;
+  font-size: 20px !important;
+  line-height: 30px !important;
+  margin-bottom: 60px;
+}
+.blog-card-btn {
+  font-family: 'Poppins' !important;
+  font-size: 18px !important;
+  line-height: 30px !important;
+  color: #C9A66D;
+  font-weight: bold;
+}
+.blog-card-btn:hover {
+  color: #ffffff;
+  background-color:#C9A66D ;
+}
+
+@media  screen and (max-width: 1024px) {
+  .blog-card-section {
+    grid-template-columns: 1fr 1fr
+  }
+}
+
+@media  screen and (max-width: 786px) {
+  .blog-card-section {
+    grid-template-columns: 1fr
+  }
+}
+//.elementor-30 .elementor-element.elementor-element-8b1cdc3 h1 {
+//  font-size: 40px !important;
+//}
+
+.blog-card-date::before {
+  content: 'CIVIL /';
+  font-family: 'Poppins';
+  font-size: 20px;
+  line-height: 30px;
+  color: #8B8B8B;
+  margin-right: 10px ;
+}

@@ -1,0 +1,29 @@
+.category-date:first-child::after {
+  content: "/";
+  color: #8B8B8B;
+  position: absolute;
+  top: 0;
+  left: 52px
+}
+
+.select-category span {
+  color: #949494
+}
+
+@media screen and (max-width: 786px) {
+  .blog-box {
+    display: flex;
+  }
+}
+
+.blog-holder img {
+  //width: 1200px;
+}
+//.single-post-slider img{
+//  height: 295px !important;
+//}
+
+.slick-dots {
+  bottom: -30px;
+}
+
